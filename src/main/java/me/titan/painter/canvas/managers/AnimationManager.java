@@ -7,7 +7,6 @@ import me.titan.painter.util.Util;
 
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -30,10 +29,9 @@ public class AnimationManager {
 		BufferedImage current = canvasScreen.getFinalImage();
 		current = Util.deepCopy(current);
 
-		Util.saveImage(new File("test.png"),current,"png");
-		if(frames.containsKey(i-1)){
-			Util.saveImage(new File("test2.png"),frames.get(i-1),"png");
-		}
+//		if(frames.containsKey(i-1)){
+//			Util.saveImage(new File("test2.png"),frames.get(i-1),"png");
+//		}
 		frames.put(i, current);
 
 		LAST_INDEX = i;

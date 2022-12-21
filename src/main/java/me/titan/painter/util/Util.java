@@ -215,7 +215,7 @@ public class Util {
 		img = new BufferedImage(nwidth,nheight,BufferedImage.TYPE_INT_ARGB);
 		g = img.createGraphics();
 		g.drawImage(org,0,0,null);
-		Util.saveImage(new File("ggo.png"),img,"png");
+		//Util.saveImage(new File("ggo.png"),img,"png");
 		System.out.println("N " + nwidth + " " + nheight + " " + width + " " + height);
 		System.out.println("MIN " + xmin + " " + ymin);
 		int[][] idk = new int[nwidth][nheight];

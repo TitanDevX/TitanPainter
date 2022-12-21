@@ -7,7 +7,6 @@ import me.titan.painter.util.Util;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.RasterFormatException;
-import java.io.File;
 
 public class SelectionManager {
 
@@ -157,8 +156,8 @@ public class SelectionManager {
 		subG.rotate(theta, rect.getCenterX(),rect.getCenterY());
 
 		subG.drawImage(e,startingPoint.x,startingPoint.y,null);
-		Util.saveImage(new File("SUBe.png"),e,"png");
-		Util.saveImage(new File("SUB.png"),rotatedImg,"png");
+//		Util.saveImage(new File("SUBe.png"),e,"png");
+//		Util.saveImage(new File("SUB.png"),rotatedImg,"png");
 		//BufferedImage r = Util.rotateSimple(sub,startingPoint, theta);
 
 		//sub = r;
